@@ -1,0 +1,69 @@
+body {
+    background-color: black;
+    background-image: url("../images/jeopardy-board.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1636px 921px;
+}
+
+@font-face {
+    font-family: jeopardy;
+    src: url('../fonts/jeopardy.ttf');
+}
+
+@font-face {
+    font-family: Korinna;
+    src: url('../fonts/Korinna-Regular.otf');
+}
+
+@font-face {
+    font-family: Swiss;
+    src: url('../fonts/Swiss-921-BT.ttf');
+}
+
+@font-face {
+    font-family: "Steile Futura";
+    src: url('../fonts/steilefuturabq-bold.otf');
+}
+
+
+.jeopardy-grid {
+  margin: 3.5rem auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+}
+
+.jeopardy-grid div {
+  width: 200px;
+  height: 125px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  background-color: navy;
+  position: relative;
+}
+
+.jeopardy-grid div p {
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    width: 180px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.white {
+    color: white;
+    font-size: 1.2rem;
+    font-family: Korinna;
+    font-weight: 700;
+}
+.gold {
+    color: gold;
+    font-family: Steile Futura;
+    font-weight: 900;
+    font-size: 3.5rem;
+    text-shadow: 5px 5px 0 black;
+}
