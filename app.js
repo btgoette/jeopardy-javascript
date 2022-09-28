@@ -106,7 +106,7 @@ loadQuestions().then(() => {
   });
 
   let cat1400 = c1Questions.filter(function (el) {
-    return el.value === "$100" || el.value === "$400";
+    return el.value === "$400"
   });
   let cat1400Question = cat1400[0].question;
   let cat1400Answer = cat1400[0].answer;
@@ -116,7 +116,7 @@ loadQuestions().then(() => {
   });
 
   let cat1600 = c1Questions.filter(function (el) {
-    return el.value === "$600" || el.value === "$300";
+    return el.value === "$600" || el.value === "$100";
   });
   let cat1600Question = cat1600[0].question;
   let cat1600Answer = cat1600[0].answer;
@@ -126,7 +126,7 @@ loadQuestions().then(() => {
   });
 
   let cat1800 = c1Questions.filter(function (el) {
-    return el.value === "$800" || el.value === "$400";
+    return el.value === "$800" || el.value === "$300";
   });
   let cat1800Question = cat1800[0].question;
   let cat1800Answer = cat1800[0].answer;
@@ -164,7 +164,7 @@ loadQuestions().then(() => {
   });
 
   let cat2400 = c2Questions.filter(function (el) {
-    return el.value === "$100" || el.value === "$400";
+    return el.value === "$400"
   });
   let cat2400Question = cat2400[0].question;
   let cat2400Answer = cat2400[0].answer;
@@ -174,7 +174,7 @@ loadQuestions().then(() => {
   });
 
   let cat2600 = c2Questions.filter(function (el) {
-    return el.value === "$600" || el.value === "$300";
+    return el.value === "$600" || el.value === "$100";
   });
   let cat2600Question = cat2600[0].question;
   let cat2600Answer = cat2600[0].answer;
@@ -184,7 +184,7 @@ loadQuestions().then(() => {
   });
 
   let cat2800 = c2Questions.filter(function (el) {
-    return el.value === "$800" || el.value === "$400";
+    return el.value === "$800" || el.value === "$300";
   });
   let cat2800Question = cat2800[0].question;
   let cat2800Answer = cat2800[0].answer;
@@ -222,7 +222,7 @@ loadQuestions().then(() => {
   });
 
   let cat3400 = c3Questions.filter(function (el) {
-    return el.value === "$100" || el.value === "$400";
+    return el.value === "$400"
   });
   let cat3400Question = cat3400[0].question;
   let cat3400Answer = cat3400[0].answer;
@@ -232,7 +232,7 @@ loadQuestions().then(() => {
   });
 
   let cat3600 = c3Questions.filter(function (el) {
-    return el.value === "$600" || el.value === "$300";
+    return el.value === "$600" || el.value === "$100";
   });
   let cat3600Question = cat3600[0].question;
   let cat3600Answer = cat3600[0].answer;
@@ -242,7 +242,7 @@ loadQuestions().then(() => {
   });
 
   let cat3800 = c3Questions.filter(function (el) {
-    return el.value === "$800" || el.value === "$400";
+    return el.value === "$800" || el.value === "$300";
   });
   let cat3800Question = cat3800[0].question;
   let cat3800Answer = cat3800[0].answer;
@@ -256,7 +256,7 @@ loadQuestions().then(() => {
   });
   let cat31000Question = cat31000[0].question;
   let cat31000Answer = cat31000[0].answer;
-  c1200.addEventListener("click", function () {
+  c31000.addEventListener("click", function () {
     c31000.textContent = "";
     showQuestion(cat31000Question.slice(1, -1), cat31000Answer, "$1000");
   });
@@ -280,7 +280,7 @@ loadQuestions().then(() => {
   });
 
   let cat4400 = c4Questions.filter(function (el) {
-    return el.value === "$100" || el.value === "$400";
+    return el.value === "$400"
   });
   let cat4400Question = cat4400[0].question;
   let cat4400Answer = cat4400[0].answer;
@@ -290,7 +290,7 @@ loadQuestions().then(() => {
   });
 
   let cat4600 = c4Questions.filter(function (el) {
-    return el.value === "$600" || el.value === "$300";
+    return el.value === "$600" || el.value === "$100";
   });
   let cat4600Question = cat4600[0].question;
   let cat4600Answer = cat4600[0].answer;
@@ -300,7 +300,7 @@ loadQuestions().then(() => {
   });
 
   let cat4800 = c4Questions.filter(function (el) {
-    return el.value === "$800" || el.value === "$400";
+    return el.value === "$800" || el.value === "$300";
   });
   let cat4800Question = cat4800[0].question;
   let cat4800Answer = cat4800[0].answer;
@@ -338,7 +338,7 @@ loadQuestions().then(() => {
   });
 
   let cat5400 = c5Questions.filter(function (el) {
-    return el.value === "$100" || el.value === "$400";
+    return el.value === "$400"
   });
   let cat5400Question = cat5400[0].question;
   let cat5400Answer = cat5400[0].answer;
@@ -348,7 +348,7 @@ loadQuestions().then(() => {
   });
 
   let cat5600 = c5Questions.filter(function (el) {
-    return el.value === "$600" || el.value === "$300";
+    return el.value === "$600" || el.value === "$100";
   });
   let cat5600Question = cat5600[0].question;
   let cat5600Answer = cat5600[0].answer;
@@ -358,7 +358,7 @@ loadQuestions().then(() => {
   });
 
   let cat5800 = c5Questions.filter(function (el) {
-    return el.value === "$800" || el.value === "$400";
+    return el.value === "$800" || el.value === "$300";
   });
   let cat5800Question = cat5800[0].question;
   let cat5800Answer = cat5800[0].answer;
@@ -372,7 +372,7 @@ loadQuestions().then(() => {
   });
   let cat51000Question = cat51000[0].question;
   let cat51000Answer = cat51000[0].answer;
-  c1200.addEventListener("click", function () {
+  c51000.addEventListener("click", function () {
     c51000.textContent = "";
     showQuestion(cat51000Question.slice(1, -1), cat51000Answer, "$1000");
   });
@@ -396,7 +396,7 @@ loadQuestions().then(() => {
   });
 
   let cat6400 = c6Questions.filter(function (el) {
-    return el.value === "$100" || el.value === "$400";
+    return el.value === "$400"
   });
   let cat6400Question = cat6400[0].question;
   let cat6400Answer = cat6400[0].answer;
@@ -406,7 +406,7 @@ loadQuestions().then(() => {
   });
 
   let cat6600 = c6Questions.filter(function (el) {
-    return el.value === "$600" || el.value === "$300";
+    return el.value === "$600" || el.value === "$100";
   });
   let cat6600Question = cat6600[0].question;
   let cat6600Answer = cat6600[0].answer;
@@ -416,7 +416,7 @@ loadQuestions().then(() => {
   });
 
   let cat6800 = c6Questions.filter(function (el) {
-    return el.value === "$800" || el.value === "$400";
+    return el.value === "$800" || el.value === "$300";
   });
   let cat6800Question = cat6800[0].question;
   let cat6800Answer = cat6800[0].answer;
