@@ -91,17 +91,15 @@ main {
 
 .game {
   position: relative;
-  height: 800px;
-  width: 1240px;
   background-image: url("../images/metal-640.jpg");
-  padding: 20px;
+  padding: 16px;
 }
 
 .jeopardy-board {
   position: relative;
   margin: 0;
   width: 100%;
-  max-width: 1200px;
+  max-width: 960px;
   border: 20px solid black;
 }
 
@@ -116,8 +114,8 @@ main {
 }
 
 .cell {
-  width: 200px;
-  height: 125px;
+  width: 160px;
+  height: 100px;
   padding: 10px;
   box-sizing: border-box;
   border: 3px solid black;
@@ -130,7 +128,7 @@ main {
   position: absolute;
   text-align: center;
   margin: 0 auto;
-  width: 180px;
+  width: 152px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -140,7 +138,7 @@ main {
 
 .cell p {
   color: white;
-  font-size: 1.2rem;
+  font-size: .9rem;
   font-family: Korinna;
   font-weight: 700;
   text-shadow: 2px 2px 0 black;
@@ -148,10 +146,10 @@ main {
 
 #question {
   color: white;
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-family: Korinna;
   font-weight: 700;
-  width: 780px;
+  width: 624px;
   position: absolute;
   text-align: center;
   margin: 0 auto;
@@ -166,7 +164,7 @@ main {
   color: #f3c443;
   font-family: "Swiss 911";
   font-weight: 400;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   text-shadow: 6px 6px 0 black;
 }
 
@@ -174,8 +172,8 @@ main {
   position: absolute;
   display: none;
   width: 100%;
-  max-width: 1240px;
-  height: 800px;
+  max-width: 996px;
+  height: 644px;
   top: 20px;
   left: 20px;
   background-color: #0e23aa;
