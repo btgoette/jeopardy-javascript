@@ -1,101 +1,112 @@
 body {
-    background-color: black;
-    background-image: url("../images/jeopardy-board.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 1636px 921px;
+  background-color: black;
 }
 
 @font-face {
-    font-family: jeopardy;
-    src: url('../fonts/jeopardy.ttf');
+  font-family: jeopardy;
+  src: url("../fonts/jeopardy.ttf");
 }
 
 @font-face {
-    font-family: Korinna;
-    src: url('../fonts/Korinna-Regular.otf');
+  font-family: Korinna;
+  src: url("../fonts/Korinna-Regular.otf");
 }
 
 @font-face {
-    font-family: Swiss;
-    src: url('../fonts/Swiss-921-BT.ttf');
+  font-family: Swiss;
+  src: url("../fonts/Swiss-921-BT.ttf");
 }
 
 @font-face {
-    font-family: "Steile Futura";
-    src: url('../fonts/steilefuturabq-bold.otf');
+  font-family: "Steile Futura";
+  src: url("../fonts/steilefuturabq-bold.otf");
 }
 
+.jeopardy-board {
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 20px solid black;
+  outline: 20px solid #444;
+}
 
-.jeopardy-grid {
-  margin: 3.5rem auto 0;
+.row {
   display: flex;
   flex-wrap: wrap;
-  width: 1200px;
+  width: 100%;
 }
 
-.jeopardy-grid div {
+.row.categories {
+  border-bottom: 8px solid black;
+}
+
+.cell {
   width: 200px;
   height: 125px;
   padding: 10px;
   box-sizing: border-box;
-  border: 2px solid black;
+  border: 3px solid black;
   background-color: navy;
   position: relative;
 }
 
-.jeopardy-grid div a,
-.jeopardy-grid div p { 
-    position: absolute;
-    text-align: center;
-    margin: 0 auto;
-    width: 180px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-decoration: none;
+.cell a,
+.cell p {
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  width: 180px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
 }
 
-.white {
-    color: white;
-    font-size: 1.2rem;
-    font-family: Korinna;
-    font-weight: 700;
-    text-shadow: 2px 2px 0 black;
+.cell p {
+  color: white;
+  font-size: 1.2rem;
+  font-family: Korinna;
+  font-weight: 700;
+  text-shadow: 2px 2px 0 black;
 }
 
-#question  {
-    color: white;
-    font-size: 3rem;
-    font-family: Korinna;
-    font-weight: 700;
-    width: 780px;
-    position: absolute;
-    text-align: center;
-    margin: 0 auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-decoration: none;
-    text-shadow: 4px 4px 0 black;
+#question {
+  color: white;
+  font-size: 4.5rem;
+  font-family: Korinna;
+  font-weight: 700;
+  width: 780px;
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  text-shadow: 4px 4px 0 black;
 }
 
-.gold {
-    color: gold;
-    font-family: Steile Futura;
-    font-weight: 900;
-    font-size: 3.5rem;
-    text-shadow: 5px 5px 0 black;
+.cell a {
+  color: #f3c443;
+  font-family: Steile Futura;
+  font-weight: 900;
+  font-size: 4.5rem;
+  text-shadow: 5px 5px 0 black;
 }
 
 #questionBlock {
-    position: absolute;
-    display: none;
-    width: 800px;
-    height: 500px;
-    background-color: navy;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    border: 10px solid black;
+  position: absolute;
+  display: none;
+  width: 100%;
+  max-width: 1200px;
+  height: 750px;
+  background-color: navy;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 10px solid black;
 }

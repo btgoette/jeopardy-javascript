@@ -1,71 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jeopardy Javascript</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
     <script type="module" src="app.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <section id="game" class="jeopardy-grid">
+      <section id="jeopardyBoard" class="jeopardy-board">
+        <div class="row categories">
+          <div class="cell"><p id="c1"></p></div>
+          <div class="cell"><p id="c2"></p></div>
+          <div class="cell"><p id="c3"></p></div>
+          <div class="cell"><p id="c4"></p></div>
+          <div class="cell"><p id="c5"></p></div>
+          <div class="cell"><p id="c6"></p></div>
+        </div>
 
-            <div><p id="c1" class="white"></p></div>
-            <div><p id="c2" class="white"></p></div>
-            <div><p id="c3" class="white"></p></div>
-            <div><p id="c4" class="white"></p></div>
-            <div><p id="c5" class="white"></p></div>
-            <div><p id="c6" class="white"></p></div>
+        <div class="row questions">
+          <div class="cell"><a href="#" id="c1200">$200</a></div>
+          <div class="cell"><a href="#" id="c2200">$200</a></div>
+          <div class="cell"><a href="#" id="c3200">$200</a></div>
+          <div class="cell"><a href="#" id="c4200">$200</a></div>
+          <div class="cell"><a href="#" id="c5200">$200</a></div>
+          <div class="cell"><a href="#" id="c6200">$200</a></div>
 
-            <div><a href="#" id="c1200" class="gold">$200</a></div>
-            <div><a href="#" id="c2200" class="gold">$200</a></div>
-            <div><a href="#" id="c3200" class="gold">$200</a></div>
-            <div><a href="#" id="c4200" class="gold">$200</a></div>
-            <div><a href="#" id="c5200" class="gold">$200</a></div>
-            <div><a href="#" id="c6200" class="gold">$200</a></div>
+          <div class="cell"><a href="#" id="c1400">$400</a></div>
+          <div class="cell"><a href="#" id="c2400">$400</a></div>
+          <div class="cell"><a href="#" id="c3400">$400</a></div>
+          <div class="cell"><a href="#" id="c4400">$400</a></div>
+          <div class="cell"><a href="#" id="c5400">$400</a></div>
+          <div class="cell"><a href="#" id="c6400">$400</a></div>
 
-            <div><a href="#" id="c1400" class="gold">$400</a></div>
-            <div><a href="#" id="c2400" class="gold">$400</a></div>
-            <div><a href="#" id="c3400" class="gold">$400</a></div>
-            <div><a href="#" id="c4400" class="gold">$400</a></div>
-            <div><a href="#" id="c5400" class="gold">$400</a></div>
-            <div><a href="#" id="c6400" class="gold">$400</a></div>
+          <div class="cell"><a href="#" id="c1600">$600</a></div>
+          <div class="cell"><a href="#" id="c2600">$600</a></div>
+          <div class="cell"><a href="#" id="c3600">$600</a></div>
+          <div class="cell"><a href="#" id="c4600">$600</a></div>
+          <div class="cell"><a href="#" id="c5600">$600</a></div>
+          <div class="cell"><a href="#" id="c6600">$600</a></div>
 
-            <div><a href="#" id="c1600" class="gold">$600</a></div>
-            <div><a href="#" id="c2600" class="gold">$600</a></div>
-            <div><a href="#" id="c3600" class="gold">$600</a></div>
-            <div><a href="#" id="c4600" class="gold">$600</a></div>
-            <div><a href="#" id="c5600" class="gold">$600</a></div>
-            <div><a href="#" id="c6600" class="gold">$600</a></div>
+          <div class="cell"><a href="#" id="c1800">$800</a></div>
+          <div class="cell"><a href="#" id="c2800">$800</a></div>
+          <div class="cell"><a href="#" id="c3800">$800</a></div>
+          <div class="cell"><a href="#" id="c4800">$800</a></div>
+          <div class="cell"><a href="#" id="c5800">$800</a></div>
+          <div class="cell"><a href="#" id="c6800">$800</a></div>
 
-            <div><a href="#" id="c1800" class="gold">$800</a></div>
-            <div><a href="#" id="c2800" class="gold">$800</a></div>
-            <div><a href="#" id="c3800" class="gold">$800</a></div>
-            <div><a href="#" id="c4800" class="gold">$800</a></div>
-            <div><a href="#" id="c5800" class="gold">$800</a></div>
-            <div><a href="#" id="c6800" class="gold">$800</a></div>
+          <div class="cell"><a href="#" id="c11000">$1000</a></div>
+          <div class="cell"><a href="#" id="c21000">$1000</a></div>
+          <div class="cell"><a href="#" id="c31000">$1000</a></div>
+          <div class="cell"><a href="#" id="c41000">$1000</a></div>
+          <div class="cell"><a href="#" id="c51000">$1000</a></div>
+          <div class="cell"><a href="#" id="c61000">$1000</a></div>
+        </div>
+      </section>
 
-            <div><a href="#" id="c11000" class="gold">$1000</a></div>
-            <div><a href="#" id="c21000" class="gold">$1000</a></div>
-            <div><a href="#" id="c31000" class="gold">$1000</a></div>
-            <div><a href="#" id="c41000" class="gold">$1000</a></div>
-            <div><a href="#" id="c51000" class="gold">$1000</a></div>
-            <div><a href="#" id="c61000" class="gold">$1000</a></div>
-
-        </section>
-
-        <section>
-            <div id="questionBlock">
-                <p id="question"></p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Score: <span id="score"></span></h2>
-        </section>
+      <section id="questionBlock">
+          <p id="question"></p>
+      </section>
     </main>
-
-</body>
+  </body>
 </html>
