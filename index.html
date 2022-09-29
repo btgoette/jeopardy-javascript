@@ -10,57 +10,80 @@
   </head>
   <body>
     <main>
-      <section id="jeopardyBoard" class="jeopardy-board">
-        <div class="row categories">
-          <div class="cell"><p id="c1"></p></div>
-          <div class="cell"><p id="c2"></p></div>
-          <div class="cell"><p id="c3"></p></div>
-          <div class="cell"><p id="c4"></p></div>
-          <div class="cell"><p id="c5"></p></div>
-          <div class="cell"><p id="c6"></p></div>
+      <section class="game">
+        <div id="jeopardyBoard" class="jeopardy-board">
+          <div class="row categories">
+            <div class="cell"><p id="c1"></p></div>
+            <div class="cell"><p id="c2"></p></div>
+            <div class="cell"><p id="c3"></p></div>
+            <div class="cell"><p id="c4"></p></div>
+            <div class="cell"><p id="c5"></p></div>
+            <div class="cell"><p id="c6"></p></div>
+          </div>
+
+          <div class="row questions">
+            <div class="cell"><a href="#" id="c1200">$200</a></div>
+            <div class="cell"><a href="#" id="c2200">$200</a></div>
+            <div class="cell"><a href="#" id="c3200">$200</a></div>
+            <div class="cell"><a href="#" id="c4200">$200</a></div>
+            <div class="cell"><a href="#" id="c5200">$200</a></div>
+            <div class="cell"><a href="#" id="c6200">$200</a></div>
+
+            <div class="cell"><a href="#" id="c1400">$400</a></div>
+            <div class="cell"><a href="#" id="c2400">$400</a></div>
+            <div class="cell"><a href="#" id="c3400">$400</a></div>
+            <div class="cell"><a href="#" id="c4400">$400</a></div>
+            <div class="cell"><a href="#" id="c5400">$400</a></div>
+            <div class="cell"><a href="#" id="c6400">$400</a></div>
+
+            <div class="cell"><a href="#" id="c1600">$600</a></div>
+            <div class="cell"><a href="#" id="c2600">$600</a></div>
+            <div class="cell"><a href="#" id="c3600">$600</a></div>
+            <div class="cell"><a href="#" id="c4600">$600</a></div>
+            <div class="cell"><a href="#" id="c5600">$600</a></div>
+            <div class="cell"><a href="#" id="c6600">$600</a></div>
+
+            <div class="cell"><a href="#" id="c1800">$800</a></div>
+            <div class="cell"><a href="#" id="c2800">$800</a></div>
+            <div class="cell"><a href="#" id="c3800">$800</a></div>
+            <div class="cell"><a href="#" id="c4800">$800</a></div>
+            <div class="cell"><a href="#" id="c5800">$800</a></div>
+            <div class="cell"><a href="#" id="c6800">$800</a></div>
+
+            <div class="cell"><a href="#" id="c11000">$1000</a></div>
+            <div class="cell"><a href="#" id="c21000">$1000</a></div>
+            <div class="cell"><a href="#" id="c31000">$1000</a></div>
+            <div class="cell"><a href="#" id="c41000">$1000</a></div>
+            <div class="cell"><a href="#" id="c51000">$1000</a></div>
+            <div class="cell"><a href="#" id="c61000">$1000</a></div>
+          </div>
         </div>
 
-        <div class="row questions">
-          <div class="cell"><a href="#" id="c1200">$200</a></div>
-          <div class="cell"><a href="#" id="c2200">$200</a></div>
-          <div class="cell"><a href="#" id="c3200">$200</a></div>
-          <div class="cell"><a href="#" id="c4200">$200</a></div>
-          <div class="cell"><a href="#" id="c5200">$200</a></div>
-          <div class="cell"><a href="#" id="c6200">$200</a></div>
-
-          <div class="cell"><a href="#" id="c1400">$400</a></div>
-          <div class="cell"><a href="#" id="c2400">$400</a></div>
-          <div class="cell"><a href="#" id="c3400">$400</a></div>
-          <div class="cell"><a href="#" id="c4400">$400</a></div>
-          <div class="cell"><a href="#" id="c5400">$400</a></div>
-          <div class="cell"><a href="#" id="c6400">$400</a></div>
-
-          <div class="cell"><a href="#" id="c1600">$600</a></div>
-          <div class="cell"><a href="#" id="c2600">$600</a></div>
-          <div class="cell"><a href="#" id="c3600">$600</a></div>
-          <div class="cell"><a href="#" id="c4600">$600</a></div>
-          <div class="cell"><a href="#" id="c5600">$600</a></div>
-          <div class="cell"><a href="#" id="c6600">$600</a></div>
-
-          <div class="cell"><a href="#" id="c1800">$800</a></div>
-          <div class="cell"><a href="#" id="c2800">$800</a></div>
-          <div class="cell"><a href="#" id="c3800">$800</a></div>
-          <div class="cell"><a href="#" id="c4800">$800</a></div>
-          <div class="cell"><a href="#" id="c5800">$800</a></div>
-          <div class="cell"><a href="#" id="c6800">$800</a></div>
-
-          <div class="cell"><a href="#" id="c11000">$1000</a></div>
-          <div class="cell"><a href="#" id="c21000">$1000</a></div>
-          <div class="cell"><a href="#" id="c31000">$1000</a></div>
-          <div class="cell"><a href="#" id="c41000">$1000</a></div>
-          <div class="cell"><a href="#" id="c51000">$1000</a></div>
-          <div class="cell"><a href="#" id="c61000">$1000</a></div>
-        </div>
-      </section>
-
-      <section id="questionBlock">
+        <div id="questionBlock">
           <p id="question"></p>
+        </div>
       </section>
+      <aside class="players">
+        <div class="player" id="p1">
+          <div class="player-money">
+            <p class="money" id="p1Money">$0</p>
+          </div>
+          <div class="player-name-answer">
+            <p class="player-name" id="p1Name"></p>
+            <p class="player-answer" id="p1Answer"></p>
+          </div>
+        </div>
+        <div class="player" id="p2">
+          <div class="player-money">
+            <p class="money" id="p2Money">$0</p>
+          </div>
+          <div class="player-name-answer">
+            <p class="player-name" id="p2Name"></p>
+            <p class="player-answer" id="p2Answer"></p>
+          </div>
+        </div>
+
+      </aside>
     </main>
   </body>
 </html>

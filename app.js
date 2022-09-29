@@ -47,6 +47,18 @@ const question = document.getElementById("question");
 const questionBlock = document.getElementById("questionBlock");
 const answer = document.getElementById("answer");
 
+const p1 = document.getElementById("p1");
+const p1Name = document.getElementById("p1Name");
+const p1Answer = document.getElementById("p1Answer");
+
+const p2 = document.getElementById("p2");
+const p2Name = document.getElementById("p2Name");
+const p2Answer = document.getElementById("p2Answer");
+
+const p3 = document.getElementById("p3");
+const p3Name = document.getElementById("p3Name");
+const p3Answer = document.getElementById("p3Answer");
+
 let questions;
 
 async function loadQuestions() {
@@ -68,12 +80,17 @@ loadQuestions().then(() => {
   function showQuestion(q, a, v) {
     question.textContent = "";
     question.textContent = q;
-    a = a.replaceAll("<br />"," ").replaceAll("\'","'").replaceAll("&nbsp;'"," ")
+    a = a
+      .replaceAll("<br />", " ")
+      .replaceAll("'", "'")
+      .replaceAll("&nbsp;'", " ");
     questionBlock.style.display = "block";
-    var timeLeft = 5;
+    var timeLeft = 8;
+    var audio = new Audio("audio/times-up.mp3");
     var questionTimer = setInterval(function () {
       if (timeLeft <= 0) {
         clearInterval(questionTimer);
+        audio.play();
         showAnswer(a);
       }
       timeLeft -= 1;
@@ -444,4 +461,43 @@ loadQuestions().then(() => {
     c61000.textContent = "";
     showQuestion(cat61000Question.slice(1, -1), cat61000Answer, "$1000");
   });
+
+  let fonts = [
+    "alpha",
+    "brown-bag",
+    "khand",
+    "rabiohead"
+  ];
+
+  function shuffle(array) {
+    let currentIndex = array.length,  randomIndex;
+
+    // While there remain elements to shuffle.
+    while (currentIndex != 0) {
+  
+      // Pick a remaining element.
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+  
+      // And swap it with the current element.
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+  
+    return array;
+  }
+
+  shuffle(fonts);
+
+  let p1Font = fonts[0];
+  p1Name.classList.add(p1Font);
+  p1Answer.classList.add(p1Font);
+  p1Name.textContent = "Player One"
+
+  let p2Font = fonts[1]
+  p2Name.classList.add(p2Font);
+  p2Answer.classList.add(p2Font);
+  p2Name.textContent = "Player Two"
+
+  let p3Font = fonts[2];
 });
